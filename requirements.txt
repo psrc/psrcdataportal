@@ -1,0 +1,15 @@
+# Core dependencies
+pandas>=1.3.0
+geopandas>=0.10.0
+sqlalchemy>=1.4.0
+pyodbc>=4.0.0
+pyyaml>=5.4.0
+shapely>=1.8.0
+
+# ArcGIS Python API
+arcgis>=2.0.0
+
+# Optional dependencies for enhanced functionality
+# Uncomment as needed:
+# arcpy  # Requires ArcGIS Desktop/Pro installation
+# to_SpatiallyEnabledDataFrame  # Custom module if available

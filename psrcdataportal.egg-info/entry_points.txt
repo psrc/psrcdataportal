@@ -1,0 +1,2 @@
+[console_scripts]
+psrc-export = psrcdataportal.cli:main

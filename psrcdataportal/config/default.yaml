@@ -1,0 +1,42 @@
+# Default configuration for psrcdataportal package
+
+database:
+  driver: "ODBC Driver 17 for SQL Server"
+  trusted_connection: true
+  timeout: 30
+
+portal:
+  default_url: "https://psregcncl.maps.arcgis.com"
+  timeout: 60
+
+paths:
+  workspace: "./workspace"
+  sde_folder: "./sde"
+  sde_name: "elmergeo.sde"
+  metadata_template: "./metadata_template.xml"
+
+spatial:
+  default_srid: 2285
+  sde_instance: "SQLserver"
+  sde_database: "ElmerGeo"
+  simplify_polygons: true
+  close_holes: true
+
+export:
+  default_share_level: "org"
+  default_allow_edits: false
+  chunk_size: 1000
+  max_retries: 3
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: null  # Set to a file path to enable file logging
+
+metadata:
+  default_organization: "Puget Sound Regional Council"
+  default_contact_city: "Seattle"
+  default_contact_state: "WA"
+  default_contact_zip: "98104"
+  default_contact_phone: "(206) 464-7090"
+  default_psrc_website: "https://www.psrc.org"
